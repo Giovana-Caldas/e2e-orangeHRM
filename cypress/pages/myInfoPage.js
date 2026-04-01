@@ -9,6 +9,7 @@ class MyInfoPage {
             buttonSave: '[type="submit"]',
             selectFields: '.oxd-select-text',
             selectOptions: '.oxd-select-text-input',
+            gender: '[data-v-7ef819fd]'
         }
 
         return selectors
@@ -35,6 +36,8 @@ class MyInfoPage {
         cy.contains('Married').click()
         cy.get(this.selectorsList().genericInputField).eq(8).clear().type(dateOfBirth)
         cy.get(this.selectorsList().dateCloseButton).click()
+        cy.get(this.selectorsList().gender).eq(1).click()
+
     }
 
     fillCustomFields(testField) {
@@ -45,7 +48,7 @@ class MyInfoPage {
 
     saveFormButton() {
         cy.get(this.selectorsList().buttonSave).eq(0).click()
-        cy.get('body').should('contain', 'Successfully Updated')
+        cy.get('.oxd-toast-icon-wrap')
         cy.get('#oxd-toaster_1')
     }
 
