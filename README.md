@@ -1,33 +1,38 @@
 # OrangeHRM Cypress E2E
 
-End-to-end test automation project for OrangeHRM using Cypress, focused on validating critical user flows and applying QA best practices.
+Projeto de automação de testes end-to-end utilizando Cypress, com foco na validação de fluxos críticos da aplicação OrangeHRM e aplicação de boas práticas de QA.
+
+# 🎯 Objetivo
+
+Garantir a qualidade das principais funcionalidades da aplicação por meio de testes automatizados, simulando cenários reais de uso e identificando possíveis falhas.
 
 # 🚀 Technologies Used
 - Cypress
 - JavaScript
 - Node.js
 
-# 💡 Good Practices Applied
-- Test organization and structure
-- Code reuse with custom commands
-- Clear and maintainable test scenarios
-- Separation of test data using fixtures
+# 💡  Boas Práticas Aplicadas
+- Organização dos testes por funcionalidades
+- Reutilização de código com custom commands
+- Uso do padrão Page Object Model (POM)
+- Cenários claros e de fácil manutenção
+- Separação de dados utilizando fixtures
 
-## ⚙️ How to Run the Project
+## ⚙️ Como executar o projeto
 
-### 1. Clone the repository
+### 1. Clonar o repositório
 
 ```
 git clone https://github.com/Giovana-Caldas/e2e-orangeHRM.git
 ```
 
-### 2. Install dependencies
+### 2. Instalar dependências
 
 ```
 npm install
 ```
 
-### 3. Run Cypress
+### 3. Executar o Cypress
 
 ```
 npx cypress open
