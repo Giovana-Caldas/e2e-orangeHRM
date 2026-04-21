@@ -6,6 +6,7 @@ class LoginPage {
             loginButton: '[type="submit"]',
             dashboradGrid: '.orangehrm-dashboard-grid',
             wrongAlert: '.oxd-alert',
+            checkLoginPage: '[data-v-8a31f039]'
         }
 
         return selectors
@@ -23,6 +24,10 @@ class LoginPage {
 
     checkAccesInvalid() {
         cy.get(this.selectorsList().wrongAlert)
+    }
+
+    checkLoginPage() {
+        cy.get(this.selectorsList().checkLoginPage)
     }
 
 }
